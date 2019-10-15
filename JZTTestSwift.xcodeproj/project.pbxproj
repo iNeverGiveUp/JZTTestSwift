@@ -13,6 +13,7 @@
 		74D33AE023556BFF007A26BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74D33ADF23556BFF007A26BE /* Assets.xcassets */; };
 		74D33AE323556BFF007A26BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74D33AE123556BFF007A26BE /* LaunchScreen.storyboard */; };
 		74D33AE623556BFF007A26BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74D33AE523556BFF007A26BE /* main.m */; };
+		74D33AF023557A7A007A26BE /* JZTSwiftBasicsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D33AEF23557A7A007A26BE /* JZTSwiftBasicsVC.swift */; };
 		8E42D606B255BEA898D1B810 /* libPods-JZTTestSwift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 783FBDC6617FCA62BCC4B4B3 /* libPods-JZTTestSwift.a */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,8 @@
 		74D33AE223556BFF007A26BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74D33AE423556BFF007A26BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74D33AE523556BFF007A26BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		74D33AEC2355797E007A26BE /* JZTTestSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JZTTestSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		74D33AEF23557A7A007A26BE /* JZTSwiftBasicsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JZTSwiftBasicsVC.swift; sourceTree = "<group>"; };
 		783FBDC6617FCA62BCC4B4B3 /* libPods-JZTTestSwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JZTTestSwift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2B7698726F8D19F067963B4 /* Pods-JZTTestSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JZTTestSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JZTTestSwift/Pods-JZTTestSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,11 +89,13 @@
 				74D33AD723556BFD007A26BE /* AppDelegate.m */,
 				74D33AD923556BFD007A26BE /* ViewController.h */,
 				74D33ADA23556BFD007A26BE /* ViewController.m */,
+				74D33AEF23557A7A007A26BE /* JZTSwiftBasicsVC.swift */,
 				74D33ADC23556BFD007A26BE /* Main.storyboard */,
 				74D33ADF23556BFF007A26BE /* Assets.xcassets */,
 				74D33AE123556BFF007A26BE /* LaunchScreen.storyboard */,
 				74D33AE423556BFF007A26BE /* Info.plist */,
 				74D33AE523556BFF007A26BE /* main.m */,
+				74D33AEC2355797E007A26BE /* JZTTestSwift-Bridging-Header.h */,
 			);
 			path = JZTTestSwift;
 			sourceTree = "<group>";
@@ -127,6 +132,7 @@
 				TargetAttributes = {
 					74D33AD223556BFD007A26BE = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -191,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74D33AF023557A7A007A26BE /* JZTSwiftBasicsVC.swift in Sources */,
 				74D33ADB23556BFD007A26BE /* ViewController.m in Sources */,
 				74D33AE623556BFF007A26BE /* main.m in Sources */,
 				74D33AD823556BFD007A26BE /* AppDelegate.m in Sources */,
@@ -336,6 +343,7 @@
 			baseConfigurationReference = A2B7698726F8D19F067963B4 /* Pods-JZTTestSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UV79DCFNSV;
 				INFOPLIST_FILE = JZTTestSwift/Info.plist;
@@ -345,6 +353,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jzt.JZTTestSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JZTTestSwift/JZTTestSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -354,6 +365,7 @@
 			baseConfigurationReference = 21DB476876E55DD18F61E59A /* Pods-JZTTestSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UV79DCFNSV;
 				INFOPLIST_FILE = JZTTestSwift/Info.plist;
@@ -363,6 +375,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jzt.JZTTestSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JZTTestSwift/JZTTestSwift-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
