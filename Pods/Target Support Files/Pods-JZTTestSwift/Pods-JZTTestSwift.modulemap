@@ -1,0 +1,6 @@
+module Pods_JZTTestSwift {
+  umbrella header "Pods-JZTTestSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}
